@@ -1,1 +1,29 @@
+alias: 🔐 RFID - Activer / Désactiver Alarme
+description: Active ou désactive l’alarme lors du passage du badge RFID
+
+trigger:
+  - platform: state
+    entity_id: binary_sensor.badge_alarme
+    to: "on"
+
+action:
+  - choose:
+      - conditions:
+          - condition: state
+            entity_id: alarm_control_panel.alarme_maison
+            state: disarmed
+        sequence:
+          - service: alarm_control_panel.alarm_arm_away
+            target:
+              entity_id: alarm_control_panel.alarme_maison
+            data:
+              code: "0000"
+      - default:
+          - service: alarm_control_panel.alarm_disarm
+            target:
+              entity_id: alarm_control_panel.alarme_maison
+            data:
+              code: "0000"
+
+mode: single
 
