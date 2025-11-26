@@ -1,23 +1,26 @@
 # 🔐 Lecteur RFID ESP32 + PN532 pour Home Assistant
 
-Ce projet permet de créer un lecteur RFID avec un ESP32 et un module PN532, afin de piloter une alarme dans Home Assistant.
-
-## ✨ Fonctions
-
-- Lecture de badges RFID / NFC
-- LED de statut (WS2812B)
-- Buzzer sonore
-- Intégration Home Assistant via ESPHome
-- Automatisation simple : un badge = activer/désactiver l’alarme
+Projet de lecteur RFID/NFC basé sur ESP32 + PN532, intégré à Home Assistant via ESPHome.
 
 ---
 
-## 🧰 Matériel nécessaire
+## 📸 Photos du projet
 
-- ESP32 (ESP32-C3 / SuperMini)
-- Module PN532 (I2C)
-- LED WS2812B (1 LED)
-- Buzzer actif
+### Lecteur RFID monté
+![Lecteur RFID](images/lecteur_rfid.jpg)
+
+### Support imprimé
+![Support 1](images/support_lecteur_rfid.jpg)
+![Support 2](images/support_lecteur_rfid_2.jpg)
+
+---
+
+## ✨ Fonctions principales
+
+- Lecture de badges RFID / NFC
+- LED WS2812B (1 LED RGB)
+- Buzzer sonore
+- Compatible Alarmo / Home Assistant
 
 ---
 
@@ -37,16 +40,24 @@ Ce projet permet de créer un lecteur RFID avec un ESP32 et un module PN532, afi
 
 ---
 
+## 📦 Matériel
+
+- ESP32 C3 / SuperMini
+- PN532 (I2C)
+- LED WS2812B
+- Buzzer actif
+
+---
+
 ## 🚀 Installation
 
 1. Installer ESPHome
-2. Flasher l’ESP32 avec le fichier YAML
-3. Ajouter l’intégration dans Home Assistant
-4. Importer l’automatisation
+2. Flasher l’ESP32
+3. Ajouter dans Home Assistant
+4. Importer l’automatisation fournie
 
 ---
 
 ## 📜 Licence
 
-Projet libre à usage personnel et communautaire.
-
+Libre pour usage personnel.
