@@ -135,7 +135,7 @@ action:
         sequence:
           - service: alarm_control_panel.alarm_disarm
             data:
-              code: "3650"
+              code: "XXXX"
             target:
               entity_id: alarm_control_panel.alarme_maison
 mode: single
