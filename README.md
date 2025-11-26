@@ -28,15 +28,13 @@ Ce projet permet de piloter une alarme (Alarmo ou autre) à l’aide de badges R
 
 ---
 
-## 🔧 Matériel utilisé
+## 📦 Matériel nécessaire
 
-| Composant | Description |
-|-----------|-------------|
-| ESP32-C3 SuperMini | Microcontrôleur WiFi/BLE |
-| PN532 | Lecteur RFID/NFC (mode I2C) |
-| WS2812B | LED RGB adressable |
-| Buzzer | Buzzer actif 3.3 V / 5 V |
-| Boîtier | Impression 3D (MakerWorld) |
+| Composant | Lien |
+|----------|------|
+| ESP32-C3 Super Mini | https://a.aliexpress.com/_EJZljtQ |
+| Module RFID/NFC PN532 | https://a.aliexpress.com/_EyM0ts8 |
+| LED WS2812B RGB | https://a.aliexpress.com/_Ez9va3q |
 
 ---
 
